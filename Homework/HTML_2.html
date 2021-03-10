@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewpoint" content="width=device-width, inital-scale=1.0"/>
+        <title>Bài 2: Form đăng ký</title>
+    </head>
+    <body>
+        <h3 align="center">Đăng kí tài khoản mới</h1>
+        <div align="center">Vui lòng điền đầy đủ thông tin bên dưới để đăng ký tài khoản mới</div>
+        <form id="reg_acc">
+            <table align="center">
+                <tr>
+                    <td>
+                        <label for="username">Tên đăng nhập</label>
+                    </td>
+                    <td>
+                        <input type="text" id="username" name="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Mật khẩu</label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="confirm_password">Gõ lại mật khẩu</label>
+                    </td>
+                    <td>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="profile_picture">Hình đại diện</label>
+                    </td>
+                    <td>
+                        <input type="file" id="profile_picture" name="profile_picture">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Giới tính</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Nam</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Nữ</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Khác</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="job">Nghề nghiệp</label>
+                    </td>
+                    <td>
+                        <select id="job" name="job">
+                            <option value="student">Học sinh</option>
+                            <option value="smarter student">Sinh viên</option>
+                            <option value="teacher">Giáo viên</option>
+                            <option value="other">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="interest">Sở thích</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="sport" name="interest" value="sport">
+                        <label for="sport">Thể thao</label>
+
+                        <input type="checkbox" id="travel" name="interest" value="travel">
+                        <label for="travel">Du lịch</label>
+
+                        <input type="checkbox" id="music" name="interest" value="music">
+                        <label for="music">Âm nhạc</label>
+
+                        <input type="checkbox" id="fashion" name="interest" value="fashion">
+                        <label for="fashion">Thời trang</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng kí">
+                        <input type="reset" value="Làm lại">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
